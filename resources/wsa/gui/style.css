@@ -1,0 +1,24 @@
+/*.site-tab-pane > .tab-header-area > .headers-region > .tab:selected:top  {
+    -fx-background-color: #D5D5D5;
+}*/
+
+.infoPane-box {
+    -fx-padding: 5;
+    -fx-spacing: 10;
+    /*-fx-background-color: #D4D4D4;*/
+}
+
+.information-box {
+    -fx-border-color: #346CDF;
+    -fx-padding: 5;
+}
+
+.toolbar {
+    -fx-background-color: #346CDF;
+    -fx-padding: 5;
+    -fx-spacing: 5;
+}
+
+.simple-box {
+    -fx-spacing: 5;
+}
