@@ -1,20 +1,25 @@
 package wsa.gui.util;
 
-import javafx.beans.binding.ListBinding;
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleObjectProperty;
-import javafx.collections.*;
-import javafx.collections.transformation.SortedList;
-import wsa.gui.BackEnd;
-import wsa.web.CrawlerResult;
-
 import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
+
+import javafx.beans.binding.ListBinding;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ListChangeListener;
+import javafx.collections.ObservableList;
+import javafx.collections.ObservableSet;
+import javafx.collections.SetChangeListener;
+import javafx.collections.WeakSetChangeListener;
+import javafx.collections.transformation.SortedList;
+import wsa.gui.BackEnd;
+import wsa.web.CrawlerResult;
 
 /** Una classe di utilità che monitora le pagine che puntano ad ogni URI esplorato da un BackEnd.
  * Tiene traccia dell'URI a cui puntano più pagine (e quante),  permette di ricavare la lista

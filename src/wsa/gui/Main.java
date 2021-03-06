@@ -1,13 +1,10 @@
 package wsa.gui;
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import wsa.web.SiteCrawler;
-
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 
 /**
  * Una classe per lanciare l'esecuzione di un WebSiteAnalyser

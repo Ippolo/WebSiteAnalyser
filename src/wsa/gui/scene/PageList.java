@@ -5,14 +5,12 @@ import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.scene.Node;
-import javafx.scene.control.*;
-
-import javafx.scene.input.Clipboard;
-import javafx.scene.input.ClipboardContent;
-import javafx.scene.input.MouseButton;
+import javafx.scene.control.ListCell;
+import javafx.scene.control.ListView;
+import javafx.scene.control.Tab;
+import javafx.scene.control.TabPane;
 import wsa.gui.BackEnd;
 import wsa.web.CrawlerResult;
-import wsa.web.SiteCrawler;
 
 /** /** Una componente grafica per un {@link BackEnd} che mostra
  * gli URI scaricati e dialoga con un {@link InfoPane} chiedendogli

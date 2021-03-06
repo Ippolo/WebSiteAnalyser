@@ -1,5 +1,11 @@
 package wsa.gui.util;
 
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.util.Optional;
+
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.StringProperty;
 import javafx.collections.ListChangeListener;
@@ -9,7 +15,13 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.control.*;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.Dialog;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListCell;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextInputDialog;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
@@ -20,13 +32,8 @@ import javafx.scene.text.Text;
 import javafx.util.Callback;
 import wsa.gui.BackEnd;
 import wsa.gui.scene.InfoPane;
-import wsa.web.*;
-
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.util.Optional;
+import wsa.web.CrawlerResult;
+import wsa.web.SiteCrawler;
 
 /** Una classe di utilità che fornisce metodi che ritornano Node che visualizzano informazioni utili riguardo
  * l'esplorazione di un dominio*/
